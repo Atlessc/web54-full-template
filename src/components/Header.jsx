@@ -18,14 +18,14 @@ export default function Header() {
   return (
     <div className="header">
       <p>[NAME]</p>
-      {(screenWidth > 500) && (
+      {(screenWidth > 501) && (
         <div className="nav-links">
           <Link className="nav-item" to="/">Home</Link>
           <Link className="nav-item" to="/projects-gallary">Projects</Link>
           <Link className="nav-item" to="/contact">Contact</Link>
         </div>
       )}
-      {(toggleMenu === true) && screenWidth < 500 && (
+      {(toggleMenu === true) && screenWidth < 501 && (
         <div className="nav-links">
           <Link onClick={toggleNav} className="nav-item" to="/">Home</Link>
           <Link onClick={toggleNav} className="nav-item" to="/projects-gallary">Projects</Link>
